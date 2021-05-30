@@ -1,0 +1,119 @@
+/* add google fonts */
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+</style>
+
+
+       /*css variables for colors.... not working*/
+       /* :root {
+        --main-bg-color:blue;
+      }
+      */
+   
+
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color:blue;
+    font-family: 'Lato', sans-serif;
+    top: 0;                              /* set this to make header sticky*/
+    z-index: 1;                          /* set this to make header sticky*/
+    position: sticky;                    /* set this to make header sticky*/
+}
+
+nav{
+    display: flex;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 160px;
+    padding: 0px 25px;
+}
+nav ul{
+    height: 58px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline;
+    padding: 0 23px; /*Right-Left Padding*/
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;   /* to hide the lines below anchor elements */
+}
+nav ul li a:hover{
+   font-weight:bolder;
+}
+.search{
+    display: flex;
+    align-items: center;
+    
+}
+.search input{
+    width: 30vw;
+    height:30px;
+    border-radius: 2px;
+    margin:0 10px;
+    padding: 0 15px;
+}
+.container{
+    min-height: calc(100vh - 58px - 12vh) ;   /* 100vh - (height of header) - (height of footer) */
+
+}
+.search button{
+    font-family: 'Lato', sans-serif; 
+    font-weight:500;
+}
+
+.btn:hover{
+    font-weight:bolder;
+    
+}
+.slider{
+    margin: auto;
+    width: 80vw;
+    margin: 12px auto;
+    overflow: hidden;
+}
+.card h2{
+    font-family: 'Lato', sans-serif;
+
+}
+.card{
+  
+    max-width: 90vw;
+    margin: 40px auto;
+
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow:hidden;             /*or use "scroll" for more images*/
+}
+.card-item{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 13px;
+   /* width: 12vw; */
+   
+    
+}
+
+
+footer{
+    height: 12vh;
+    background-color: blue;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
